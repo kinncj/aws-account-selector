@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      button {
+        outline: none;
+        margin: 10px;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css"  href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css"/>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <form class="form well">
+          <div class="row-fluid">
+              <div class="control-group span6">
+                  <label for="add_account_account">Account Number</label>
+                  <input id="add_account_account" type="text" mame="account"  class="input-block-level"/>
+              </div>
+              <div class="control-group span6">
+                  <label for="add_account_nickname">Nickname</label>
+                  <input id="add_account_nickname" type="text" mame="nickname" class="input-block-level"/>
+              </div>
+          </div>
+          <div class="form-actions">
+              <button class="btn btn-primary" type="button" id="add_account_button">Add</button>
+          </div>
+      </form>
+    </div>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Account Number</th>
+          <th scope="col">Nickname</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody id="accountList">
+      </tbody>
+    </table>
+  </body>
+  <script src="options.js"></script>
+</html>
